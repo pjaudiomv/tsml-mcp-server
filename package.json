@@ -1,6 +1,6 @@
 {
   "name": "@pjaudiomv/tsml-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Model Context Protocol server for 12 Step Meeting List (TSML) WordPress plugin API",
   "main": "dist/index.js",
   "type": "module",
@@ -38,18 +38,18 @@
     "typescript"
   ],
   "author": {
-    "name": "Code for Recovery",
-    "url": "https://code4recovery.org"
+    "name": "pjaudiomv",
+    "url": "https://github.com/pjaudiomv/"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bmlt-enabled/tsml-mcp-server.git"
+    "url": "git+https://github.com/pjaudiomv/tsml-mcp-server.git"
   },
   "bugs": {
-    "url": "https://github.com/bmlt-enabled/tsml-mcp-server/issues"
+    "url": "https://github.com/pjaudiomv/tsml-mcp-server/issues"
   },
-  "homepage": "https://github.com/bmlt-enabled/tsml-mcp-server#readme",
+  "homepage": "https://github.com/pjaudiomv/tsml-mcp-server#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.5",
     "axios": "^1.6.2",
