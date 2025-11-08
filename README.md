@@ -89,10 +89,10 @@ Submit feedback or corrections about a meeting.
 
 ```bash
 # Install globally
-npm install -g tsml-mcp-server
+npm install -g @pjaudiomv/tsml-mcp-server
 
 # Or install locally in your project
-npm install tsml-mcp-server
+npm install @pjaudiomv/tsml-mcp-server
 ```
 
 ### Install from source
