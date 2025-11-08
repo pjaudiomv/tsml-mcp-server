@@ -1,0 +1,72 @@
+{
+  "name": "tsml-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for 12 Step Meeting List (TSML) WordPress plugin API",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "watch": "tsx --watch src/index.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint && npm test && npm run build",
+    "preversion": "npm run lint && npm test",
+    "version": "npm run build",
+    "postversion": "echo \"Version updated successfully\"",
+    "test": "echo \"Warning: no tests specified\" && exit 0",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
+  },
+  "keywords": [
+    "mcp",
+    "tsml",
+    "12-step",
+    "meetings",
+    "api",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "recovery",
+    "wordpress",
+    "aa",
+    "na",
+    "al-anon",
+    "typescript"
+  ],
+  "author": {
+    "name": "Code for Recovery",
+    "url": "https://code4recovery.org"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmlt-enabled/tsml-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmlt-enabled/tsml-mcp-server/issues"
+  },
+  "homepage": "https://github.com/bmlt-enabled/tsml-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "axios": "^1.6.2",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^24.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "globals": "^16.4.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "bin": {
+    "tsml-mcp-server": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

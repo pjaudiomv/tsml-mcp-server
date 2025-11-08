@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "tsml": {
+      "command": "tsml-mcp-server",
+      "env": {
+        "TSML_WORDPRESS_URL": "https://your-wordpress-site.org"
+      }
+    }
+  }
+}
